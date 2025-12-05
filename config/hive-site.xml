@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!-- Hive Configuration -->
+<configuration>
+    <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+        <value>jdbc:derby:;databaseName=/usr/local/hive/metastore_db;create=true</value>
+        <description>JDBC connection string for metastore database</description>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionDriverName</name>
+        <value>org.apache.derby.jdbc.EmbeddedDriver</value>
+        <description>JDBC driver for Derby database</description>
+    </property>
+    <property>
+        <name>hive.metastore.warehouse.dir</name>
+        <value>/user/hive/warehouse</value>
+        <description>Location of Hive warehouse directory</description>
+    </property>
+    <property>
+        <name>hive.exec.scratchdir</name>
+        <value>/tmp/hive</value>
+        <description>Scratch directory for Hive jobs</description>
+    </property>
+    <property>
+        <name>hive.server2.enable.doAs</name>
+        <value>false</value>
+        <description>Run queries as the user who submitted them</description>
+    </property>
+    <property>
+        <name>hive.exec.dynamic.partition</name>
+        <value>true</value>
+        <description>Enable dynamic partitioning</description>
+    </property>
+    <property>
+        <name>hive.exec.dynamic.partition.mode</name>
+        <value>nonstrict</value>
+        <description>Allow all partitions to be dynamic</description>
+    </property>
+    <property>
+        <name>hive.exec.max.dynamic.partitions</name>
+        <value>10000</value>
+        <description>Maximum number of dynamic partitions</description>
+    </property>
+    <property>
+        <name>hive.stats.autogather</name>
+        <value>true</value>
+        <description>Automatically gather statistics</description>
+    </property>
+    <property>
+        <name>hive.exec.compress.output</name>
+        <value>false</value>
+        <description>Compress final output of queries</description>
+    </property>
+</configuration>
