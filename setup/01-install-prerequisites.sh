@@ -23,7 +23,7 @@ java -version
 
 # Install required tools
 echo "Installing required tools..."
-apt install -y ssh pdsh wget git vim curl build-essential
+apt install -y ssh pdsh wget git vim curl build-essential bc
 
 # Configure SSH for passwordless login
 echo "Configuring SSH..."

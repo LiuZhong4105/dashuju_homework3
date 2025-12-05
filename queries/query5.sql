@@ -20,7 +20,7 @@ WHERE
     AND n_regionkey = r_regionkey
     AND r_name = 'ASIA'
     AND o_orderdate >= DATE '1994-01-01'
-    AND o_orderdate < DATE '1994-01-01' + INTERVAL '1' YEAR
+    AND o_orderdate < DATE '1995-01-01'
 GROUP BY
     n_name
 ORDER BY
