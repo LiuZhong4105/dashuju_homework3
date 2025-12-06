@@ -1,0 +1,39 @@
+# Hadoop and Hive data
+hadoop/
+metastore_db/
+derby.log
+
+# TPC-H data files
+*.tbl
+tpch-dbgen/
+
+# Downloaded archives
+*.tar.gz
+*.zip
+
+# Results and logs
+results/*.txt
+results/*.log
+*.log
+
+# Temporary files
+/tmp/
+*.tmp
+*.swp
+*~
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python

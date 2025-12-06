@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!-- Hadoop HDFS Configuration -->
+<configuration>
+    <property>
+        <name>dfs.replication</name>
+        <value>1</value>
+        <description>Default block replication (1 for standalone)</description>
+    </property>
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>file:///home/${user.name}/hadoop/hdfs/namenode</value>
+        <description>NameNode directory for namespace and transaction logs</description>
+    </property>
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>file:///home/${user.name}/hadoop/hdfs/datanode</value>
+        <description>DataNode directory for storing blocks</description>
+    </property>
+    <property>
+        <name>dfs.blocksize</name>
+        <value>134217728</value>
+        <description>HDFS block size: 128MB</description>
+    </property>
+</configuration>
