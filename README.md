@@ -44,7 +44,7 @@ This homework tests Hive performance across different storage formats:
 
 - Ubuntu 24.04 (fresh installation)
 - At least 10GB free disk space
-- Java 8 or Java 11
+- Java 8
 - Internet connection for downloading dependencies
 
 ## Quick Start

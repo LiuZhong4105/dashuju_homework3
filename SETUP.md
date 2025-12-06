@@ -19,10 +19,10 @@ sudo apt upgrade -y
 ```
 
 ### Install Java
-Hadoop and Hive require Java. Install OpenJDK 11:
+Hadoop and Hive require Java. Install OpenJDK 8:
 
 ```bash
-sudo apt install -y openjdk-11-jdk
+sudo apt install -y openjdk-8-jdk
 java -version
 ```
 
@@ -71,7 +71,7 @@ export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
 export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"
 
 # Java Environment
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export PATH=$PATH:$JAVA_HOME/bin
 ```
 
@@ -85,7 +85,7 @@ source ~/.bashrc
 #### 1. hadoop-env.sh
 Edit `/usr/local/hadoop/etc/hadoop/hadoop-env.sh`:
 ```bash
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 ```
 
 #### 2. core-site.xml

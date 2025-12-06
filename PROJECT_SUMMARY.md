@@ -19,7 +19,7 @@
 位于 `setup/` 目录：
 
 1. **01-install-prerequisites.sh**
-   - 安装 Java 11
+   - 安装 Java 8
    - 安装 SSH、git、wget 等必要工具
    - 安装 bc 计算器（用于性能测试）
    - 配置 SSH 免密登录
