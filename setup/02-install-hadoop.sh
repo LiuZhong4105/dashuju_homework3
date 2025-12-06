@@ -46,7 +46,7 @@ export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
 export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"
 
 # Java Environment
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export PATH=$PATH:$JAVA_HOME/bin
 EOF
     echo "Environment variables added to ~/.bashrc"
@@ -59,8 +59,8 @@ source ~/.bashrc
 
 # Configure Java home in hadoop-env.sh
 echo "Configuring hadoop-env.sh..."
-if ! grep -q "export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64" ${HADOOP_HOME}/etc/hadoop/hadoop-env.sh; then
-    echo "export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64" >> ${HADOOP_HOME}/etc/hadoop/hadoop-env.sh
+if ! grep -q "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64" ${HADOOP_HOME}/etc/hadoop/hadoop-env.sh; then
+    echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64" >> ${HADOOP_HOME}/etc/hadoop/hadoop-env.sh
 fi
 
 # Create Hadoop directories

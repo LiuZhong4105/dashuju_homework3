@@ -13,9 +13,9 @@ echo "=========================================="
 echo "Updating package list..."
 apt update
 
-# Install OpenJDK 11
-echo "Installing OpenJDK 11..."
-apt install -y openjdk-11-jdk
+# Install OpenJDK 8
+echo "Installing OpenJDK 8..."
+apt install -y openjdk-8-jdk
 
 # Verify Java installation
 echo "Java version:"
